@@ -2,16 +2,120 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: #232c63;
 }
 
-.homepage-container {
-    max-width: 800px;
-    margin: 50px auto;
+/* Navbar styles */
+.navbar {
+    overflow: hidden;
+    background-color: #f0f0f0; /* Light gray background color */
+}
+
+.dropdown {
+    float: left;
+}
+
+.dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: #333;
+    background-color: inherit;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-family: Arial, sans-serif;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Left menu styles */
+.left-menu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #333; /* Dark background color */
     padding: 20px;
+    width: 200px;
+    overflow-y: auto;
+}
+
+.left-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.left-menu li {
+    margin-bottom: 10px;
+}
+
+.left-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.left-menu a:hover {
+    color: #f0f0f0;
+}
+
+
+
+.homepage-container {
+    max-width: 2000px;
+	height: 50px;
+    margin: 0px auto;
+    padding: 0px 10px;
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	text-align: center;
+}
+
+.module-container {
+    max-width: 2000px;
+	height: 100px;
+    margin: 0px auto;
+    padding: 0px 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	text-align: center;
+}
+
+
+.content-container{
+	width: 2000px;
+	height: 500px;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 }
 
 h1 {
