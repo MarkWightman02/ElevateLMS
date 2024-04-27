@@ -1,6 +1,6 @@
 <?php
 // Include the database connection script
-require_once 'config.php';
+require_once 'Scripts/config.php';
 
 // Check if the form is submitted
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
