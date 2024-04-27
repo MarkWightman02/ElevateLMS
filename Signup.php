@@ -30,12 +30,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">\
+	<link rel="stylesheet" href="Style/style.css">
     <title>Sign Up</title>
 </head>
 <body>
     <h2>Sign Up</h2>
-    <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+    <form action="Signup.php" method="post">
         <label for="username">Username</label>
         <input type="text" id="username" name="username" placeholder="Enter username" required><br><br>
         <label for="password">Password</label>
