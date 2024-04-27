@@ -3,10 +3,12 @@ session_start();
 
 // Check if the form is submitted
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Retrieve and sanitize username and password from the form
-    $username = filter_input(INPUT_POST, 'username', FILTER_SANITIZE_STRING);
-    $password = filter_input(INPUT_POST, 'password', FILTER_SANITIZE_STRING);
+	
 
+    // Retrieve and sanitize username and password from the form
+    $username2 = filter_input(INPUT_POST, 'username', FILTER_SANITIZE_STRING);
+    $password = filter_input(INPUT_POST, 'password', FILTER_SANITIZE_STRING);
+	
     // Include the database connection script
     require_once 'Scripts/config.php';
 
@@ -16,10 +18,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     try {
         // Prepare and execute the SQL statement to insert the user into the database
         $stmt = $pdo->prepare("INSERT INTO users (username, password_hash) VALUES (?, ?)");
-        $stmt->execute([$username, $hashedPassword]);
+        $stmt->execute([$username2, $hashedPassword]);
 
         // Display success message
-        echo "User '$username' added successfully!";
+        echo "User '$username2' added successfully!";
     } catch (PDOException $e) {
         // Display error message
         echo "Error: " . $e->getMessage();

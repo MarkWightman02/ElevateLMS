@@ -2,8 +2,8 @@
 session_start();
 echo "test"
 // Include the database connection script
-require_once 'Scripts/config.php';
-
+require_once 'config.php';
+/*
 // Check if the form is submitted
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Retrieve username and password from the form
@@ -38,3 +38,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     exit();
 }
 ?>
+*/
