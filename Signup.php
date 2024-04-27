@@ -35,7 +35,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </head>
 <body>
 	<div class="container">
-		<h2>Add User</h2>
+		<h2>Sign Up</h2>
 		<form action="<signup.php>" method="post">
 			<label for="username">Username</label>
 			<input type="text" id="username" name="username" placeholder="Enter username" required><br><br>
