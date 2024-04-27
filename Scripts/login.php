@@ -1,14 +1,14 @@
 <?php
 session_start();
 
+// Include the database connection script
+require_once 'Scripts/config.php';
+
 // Check if the form is submitted
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Retrieve username and password from the form
     $username = $_POST['username'];
     $password = $_POST['password'];
-
-    // Include the database connection script
-    require_once 'Scripts/config.php';
 
     // Query the database to fetch the user with the provided username
     $stmt = $pdo->prepare("SELECT * FROM users WHERE username = ?");
