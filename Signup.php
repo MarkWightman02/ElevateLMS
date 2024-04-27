@@ -35,13 +35,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <title>Sign Up</title>
 </head>
 <body>
+	<div class="container">
     <h2>Sign Up</h2>
-    <form action="Signup.php" method="post">
-        <label for="username">Username</label>
-        <input type="text" id="username" name="username" placeholder="Enter username" required><br><br>
-        <label for="password">Password</label>
-        <input type="password" id="password" name="password" placeholder="Enter password" required><br><br>
-        <input type="submit" value="Sign Up">
-    </form>
+		<form action="Signup.php" method="post">
+			<label for="username">Username</label>
+			<input type="text" id="username" name="username" placeholder="Enter username" required><br><br>
+			<label for="password">Password</label>
+			<input type="password" id="password" name="password" placeholder="Enter password" required><br><br>
+			<input type="submit" value="Sign Up">
+		</form>
+	<\div>
 </body>
 </html>
