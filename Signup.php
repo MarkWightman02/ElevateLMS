@@ -1,12 +1,14 @@
 <?php
-// Include the database connection script
-require_once 'Scripts/config.php';
+session_start();
 
 // Check if the form is submitted
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Retrieve user input from the form
-    $username = $_POST['username'];
-    $password = $_POST['password'];
+    // Retrieve and sanitize username and password from the form
+    $username = filter_input(INPUT_POST, 'username', FILTER_SANITIZE_STRING);
+    $password = filter_input(INPUT_POST, 'password', FILTER_SANITIZE_STRING);
+
+    // Include the database connection script
+    require_once 'Scripts/config.php';
 
     // Hash the password
     $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
@@ -24,24 +26,21 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 }
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="Style/style.css">
-    <title>Add User</title>
+    <title>Sign Up</title>
 </head>
 <body>
-	<div class="container">
-		<h2>Sign Up</h2>
-		<form action="<Scripts/signup.php>" method="post">
-			<label for="username">Username</label>
-			<input type="text" id="username" name="username" placeholder="Enter username" required><br><br>
-			<label for="password">Password</label>
-			<input type="password" id="password" name="password" placeholder="Enter password" required><br><br>
-			<input type="submit" value="Add User">
-		</form>
+    <h2>Sign Up</h2>
+    <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" placeholder="Enter username" required><br><br>
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter password" required><br><br>
+        <input type="submit" value="Sign Up">
+    </form>
 </body>
 </html>
