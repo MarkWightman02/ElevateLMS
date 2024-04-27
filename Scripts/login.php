@@ -1,6 +1,7 @@
 <?php
 session_start();
 
+echo "test"
 // Include the database connection script
 require_once 'Scripts/config.php';
 
