@@ -20,8 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $stmt = $pdo->prepare("INSERT INTO users (username, password_hash) VALUES (?, ?)");
         $stmt->execute([$username2, $hashedPassword]);
 
-        // Display success message
-        echo "User '$username2' added successfully!";
+        header("Location: ../Index.html");
     } catch (PDOException $e) {
         // Display error message
         echo "Error: " . $e->getMessage();
