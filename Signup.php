@@ -7,13 +7,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Retrieve and sanitize username and password from the form
     $username2 = filter_input(INPUT_POST, 'username', FILTER_SANITIZE_STRING);
-    $password = filter_input(INPUT_POST, 'password', FILTER_SANITIZE_STRING);
+    $password2 = filter_input(INPUT_POST, 'password', FILTER_SANITIZE_STRING);
 	
     // Include the database connection script
     require_once 'Scripts/config.php';
 
     // Hash the password
-    $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
+    $hashedPassword = password_hash($password2, PASSWORD_DEFAULT);
 
     try {
         // Prepare and execute the SQL statement to insert the user into the database
