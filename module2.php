@@ -1,3 +1,14 @@
+<?php
+session_start();
+
+// Check if the user is logged in
+if (!isset($_SESSION['username'])) {
+    // User is not logged in, redirect to the login page
+    header("Location: Index.html");
+    exit();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,7 +34,7 @@
 	
 	<div class="left-menu">
         <ul>
-            <li><a href="Module3.html">Start Here!</a></li>
+            <li><a href="Module2.html">Start Here!</a></li>
             <li><a href="">Reading</a></li>
             <li><a href="">Quiz</a></li>
             <li><a href="">Discussion</a></li>
@@ -33,8 +44,8 @@
 	
 	
     <div class="module-container">
-        <h1>Module 3 Name</h1>
-        <p>Module 3 Description</p>
+        <h1>Module 2 Name</h1>
+        <p>Module 2 Description</p>
     </div>
 	
 	<div class="content-container">
