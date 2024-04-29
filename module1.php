@@ -62,15 +62,18 @@ if (!isset($_SESSION['username'])) {
 	</div>
 	
 	    <script>
+		console.log("test1");
         // Get the elements whose text will be changed
-        const moduleHead = document.getElementById('module-container');
-        const moduleContet = document.getElementById('content-container');
+		const moduleContent = document.querySelector('.content-container');
+
 
         // Add event listener to the left menu
         document.getElementById('reading').addEventListener('click', function(event) {
+			console.log("test2");
             event.preventDefault();
             // Update text of the elements
-            moduleContent.textContent = 'Reading Content Goes Here';
+            moduleContent.innerHTML = 'Reading Content Goes Here';
+			console.log("test3");
         });
     </script>
 </body>
