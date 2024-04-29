@@ -34,7 +34,7 @@ if (!isset($_SESSION['username'])) {
 	
 	<div class="left-menu">
         <ul>
-            <li><a href="module1.php">Start Here!</a></li>
+            <li><a href="Module1.php">Start Here!</a></li>
             <li><a href="">Reading</a></li>
             <li><a href="">Quiz</a></li>
             <li><a href="">Discussion</a></li>
