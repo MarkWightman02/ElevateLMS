@@ -45,14 +45,13 @@ if (!isset($_SESSION['username'])) {
 	
     <div class="module-container">
         <h1>Module 1: The Basic Movements</h1>
-        <p>At Elevate, we believe in learning the basics first. In this lesson, we will learn about the basic movements:</p>
-		<li>Bridging</li>
-		<li>Shrimping</li>
-		<li>Heisting</li>
     </div>
 	
 	<div class="content-container">
-		<p>Module Content</p>
+		<p>At Elevate, we believe in learning the basics first. In this lesson, we will learn about the basic movements:</p>
+		<li>Bridging</li>
+		<li>Shrimping</li>
+		<li>Heisting</li>
 	</div>
 
 	<div class="footer-container">
