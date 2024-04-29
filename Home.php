@@ -37,7 +37,9 @@ if (!isset($_SESSION['username'])) {
     </div>
 	
 	<div class="content-container">
-		<p>Content</p>
+		<p>Welcome to Elevate LMS, your comprehensive learning management solution designed to elevate your grappling to new heights.</p>
+		<p>For more information about the Dojo or LMS, please navigate to <a href="AboutUs.html">About Us</a>
+		<p>To get started with your first lesson, navigate to Module 1 by clicking <a href="Module1.php">here</a></p>
 	</div>
 
     <footer>
