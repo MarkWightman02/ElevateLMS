@@ -36,8 +36,8 @@ if (!isset($_SESSION['username'])) {
         <ul>
             <li><a href="Module1.php">Start Here!</a></li>
             <li><a href="#" id="reading">Reading</a></li>
-            <li><a href="#" id ="quiz">Quiz</a></li>
             <li><a href="#" id="video">Video</a></li>
+            <li><a href="#" id="quiz">Quiz</a></li>
         </ul>
     </div>
 	
@@ -62,18 +62,29 @@ if (!isset($_SESSION['username'])) {
 	</div>
 	
 	    <script>
-		console.log("test1");
         // Get the elements whose text will be changed
 		const moduleContent = document.querySelector('.content-container');
 
 
         // Add event listener to the left menu
         document.getElementById('reading').addEventListener('click', function(event) {
-			console.log("test2");
             event.preventDefault();
             // Update text of the elements
-            moduleContent.innerHTML = 'Reading Content Goes Here';
-			console.log("test3");
+            moduleContent.innerHTML = "test";
+        });
+		
+		        // Add event listener to the left menu
+        document.getElementById('video').addEventListener('click', function(event) {
+            event.preventDefault();
+            // Update text of the elements
+            moduleContent.innerHTML = '<div class = "video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/A9wyYrhGw0w?si=12JlCv45lFOEWZ3T" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe';
+        });
+		
+		        // Add event listener to the left menu
+        document.getElementById('quiz').addEventListener('click', function(event) {
+            event.preventDefault();
+            // Update text of the elements
+            moduleContent.innerHTML = "test3";
         });
     </script>
 </body>

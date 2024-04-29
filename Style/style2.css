@@ -143,6 +143,18 @@ p {
     margin-bottom: 20px;
 }
 
+.video-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+
+.video-container iframe {
+	max-width: 100%;
+	max-height: 100%;
+}
+
 /*This fixes the left menu on mobile devices, from W3Schools */
 @media only screen and (max-width: 768px) {
     .left-menu {
