@@ -126,7 +126,6 @@ body {
     margin: 10px auto;
     padding: 10px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
@@ -144,10 +143,12 @@ p {
 }
 
 .video-container {
-	display: flex;
+	display: inline-block;
+	margin: 25px;
 	justify-content: center;
 	align-items: center;
 	height: 100%;
+	
 }
 
 .video-container iframe {

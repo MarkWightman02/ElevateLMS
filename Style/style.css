@@ -18,7 +18,7 @@ h2 {
 input[type="text"],
 input[type="password"],
 input[type="submit"],
-input[type="email] {
+input[type="email"] {
     width: 100%;
     padding: 10px;
     margin: 8px 0;
