@@ -25,7 +25,7 @@ if (!isset($_SESSION['username'])) {
         <div class="dropdown">
             <button class="dropbtn">Menu</button>
             <div class="dropdown-content">
-				<a href="Home.html">Home</a>
+				<a href="Home.php">Home</a>
                 <a href="Module1.html">Module 1</a>
                 <a href="Module2.html">Module 2</a>
                 <a href="Module3.html">Module 3</a>
