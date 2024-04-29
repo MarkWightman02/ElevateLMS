@@ -7,6 +7,14 @@
     <link rel="stylesheet" href="Style\style2.css">
 </head>
 <body>
+
+	    <script>
+        // Check if the user is logged in
+        if (!"<?php echo isset($_SESSION['username']); ?>") {
+            // User is not logged in, redirect to the login page
+            window.location.href = 'Index.html';
+        }
+    </script>
     
 	<nav class="navbar">
         <div class="dropdown">
