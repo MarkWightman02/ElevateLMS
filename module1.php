@@ -35,9 +35,9 @@ if (!isset($_SESSION['username'])) {
 	<div class="left-menu">
         <ul>
             <li><a href="Module1.php">Start Here!</a></li>
-            <li><a href="">Reading</a></li>
-            <li><a href="">Quiz</a></li>
-            <li><a href="">Discussion</a></li>
+            <li><a href="#" id="reading">Reading</a></li>
+            <li><a href="#" id ="quiz">Quiz</a></li>
+            <li><a href="#" id="video">Video</a></li>
         </ul>
     </div>
 	
@@ -60,6 +60,19 @@ if (!isset($_SESSION['username'])) {
 			<p>&copy; 2024 Elevate Judo and Jiu Jitsu. All rights reserved.</p>
 		</footer>
 	</div>
+	
+	    <script>
+        // Get the elements whose text will be changed
+        const moduleHead = document.getElementById('module-container');
+        const moduleContet = document.getElementById('content-container');
+
+        // Add event listener to the left menu
+        document.getElementById('reading').addEventListener('click', function(event) {
+            event.preventDefault();
+            // Update text of the elements
+            moduleContent.textContent = 'Reading Content Goes Here';
+        });
+    </script>
 </body>
 
 </html>
