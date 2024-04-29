@@ -57,7 +57,7 @@ body {
     bottom: 0;
     background-color: #333;
     padding: 20px;
-    width: 200px;
+    width: 5%;
     overflow-y: auto;
 	margin-top: 46px;
 }
@@ -97,6 +97,7 @@ body {
 
 .module-container {
     max-width: 2000px;
+    width: 50%;
 	height: 100px;
     margin: 0px auto;
     padding: 0px 10px;
@@ -104,12 +105,12 @@ body {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 	text-align: center;
-	margin-left: 200px;
 }
 
 
 .content-container{
-	width: 2000px;
+	max-width: 2000px;
+	width: 80%;
 	height: 500px;
     margin: 10px auto;
     padding: 10px;
@@ -142,7 +143,7 @@ p {
     margin-bottom: 20px;
 }
 
-//This fixes the left menu on mobile devices, from W3Schools
+/*This fixes the left menu on mobile devices, from W3Schools */
 @media only screen and (max-width: 768px) {
     .left-menu {
         width: 100%;
