@@ -52,6 +52,7 @@ if (!isset($_SESSION['username'])) {
 		<li>Bridging</li>
 		<li>Shrimping</li>
 		<li>Heisting</li>
+		<p> To begin, use the menu on the left side of your screen to select "Reading". After you've finished reading, you may move on to the Quiz and Discussion.
 	</div>
 
 	<div class="footer-container">
