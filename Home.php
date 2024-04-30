@@ -32,7 +32,7 @@ if (!isset($_SESSION['username'])) {
             </div>
         </div>
     </nav>
-    <div class="homepage-container" height:50px;>
+    <div class="module-container" height:50px;>
         <h1>Elevate Institute</h1>
     </div>
 	

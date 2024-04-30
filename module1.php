@@ -19,6 +19,7 @@ if (!isset($_SESSION['username'])) {
 </head>
 <body>
     
+	
 	<nav class="navbar">
         <div class="dropdown">
             <button class="dropbtn">Menu</button>
@@ -31,7 +32,6 @@ if (!isset($_SESSION['username'])) {
         </div>
     </nav>
 	
-	
 	<div class="left-menu">
         <ul>
             <li><a href="Module1.php">Start Here!</a></li>
@@ -41,6 +41,11 @@ if (!isset($_SESSION['username'])) {
         </ul>
     </div>
 	
+    
+
+	
+	
+
 	
 	
     <div class="module-container">
@@ -83,9 +88,9 @@ if (!isset($_SESSION['username'])) {
             event.preventDefault();
 			moduleContent.innerHTML = '';
             // Update text of the elements
-            moduleContent.innerHTML += '<div class = "video-container"><iframe width="500" height="315" src="https://www.youtube.com/embed/A9wyYrhGw0w?si=12JlCv45lFOEWZ3T" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>';
-		    moduleContent.innerHTML += '<div class = "video-container"><iframe width="500" height="315" src="https://www.youtube.com/embed/w_0fqd8aQco?si=W5mu6l-kMHHG0w4X" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>';
-			moduleContent.innerHTML += '<div class = "video-container"><iframe width="500" height="315" src="https://www.youtube.com/embed/pejtetvJGKY?si=y3Zn-W6v05V4FBw7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>';
+            moduleContent.innerHTML += '<div class = "video-container"><iframe width="200%" height="50%" src="https://www.youtube.com/embed/A9wyYrhGw0w?si=12JlCv45lFOEWZ3T" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>';
+		    moduleContent.innerHTML += '<div class = "video-container"><iframe width="200%" height="50%" src="https://www.youtube.com/embed/w_0fqd8aQco?si=W5mu6l-kMHHG0w4X" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>';
+			moduleContent.innerHTML += '<div class = "video-container"><iframe width="200%" height="50%" src="https://www.youtube.com/embed/pejtetvJGKY?si=y3Zn-W6v05V4FBw7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>';
         });
 		
 // Add event listener to the left menu
@@ -121,6 +126,7 @@ document.getElementById('quiz').addEventListener('click', function(event) {
 
 //js function to check correct answers
 function submitQuiz() {
+    
     // Get the selected answers
     const q1Answer = document.querySelector('input[name="q1"]:checked');
     const q2Answer = document.querySelector('input[name="q2"]:checked');
@@ -138,10 +144,10 @@ function submitQuiz() {
             }
         }
         // Display feedback to the user
-        moduleContent.innerHTML += `<p>Quiz Submitted! Your score: ${score}/${correctAnswers.length}</p>`;
+        moduleContent.innerHTML = `<p>Quiz Submitted! Your score: ${score}/${correctAnswers.length}</p>`;
     } else {
         // Prompt user to answer all questions
-        moduleContent.innerHTML += '<p>Please answer all questions.</p>';
+        moduleContent.innerHTML = '<p>Please answer all questions.</p>';
     }
 }
     </script>

@@ -7,12 +7,18 @@ body {
 
 /* Navbar styles */
 .navbar {
-    overflow: hidden;
+    overflow: visible;
     background-color: #f0f0f0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure it's above other content */
 }
 
 .dropdown {
+    overflow:visible;
     float: left;
+    z-index: 1001;
 }
 
 .dropbtn {
@@ -58,8 +64,7 @@ body {
     background-color: #333;
     padding: 20px;
     width: 5%;
-    overflow-y: auto;
-	margin-top: 46px;
+    margin-top:48px;
 }
 
 .left-menu ul {
@@ -99,7 +104,7 @@ body {
     max-width: 2000px;
     width: 50%;
 	height: 100px;
-    margin: 0px auto;
+    margin: 50px auto;
     padding: 0px 10px;
     background-color: #fff;
     border-radius: 8px;
@@ -111,7 +116,7 @@ body {
 .content-container{
 	max-width: 2000px;
 	width: 80%;
-	height: 500px;
+	height: calc(500px + 100%);
     margin: 10px auto;
     padding: 10px;
     background-color: #fff;
@@ -121,11 +126,12 @@ body {
 
 
 .footer-container{
-	width: 2000px;
-	height: 500px;
+	width: 80%;
+	height: calc(500px + 100%);
     margin: 10px auto;
     padding: 10px;
     border-radius: 8px;
+    
 }
 
 h1 {
